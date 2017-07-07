@@ -1,6 +1,8 @@
-from django.conf.urls import url
+
+from django.conf.urls import *
+from django.contrib import admin
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.current_datetime, name='current_datetime')
+    url(r'^$', views.hello, name='hello'),
 ]
