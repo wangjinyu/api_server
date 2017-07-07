@@ -1,8 +1,9 @@
 
-from django.conf.urls import *
+from django.conf.urls import url
 from django.contrib import admin
-from . import views
+from api import views
 
 urlpatterns = [
+    # url(r'^$', views.hello, name = 'hello')
     url(r'^$', views.hello, name='hello'),
 ]
