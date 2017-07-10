@@ -6,5 +6,5 @@ from api import views
 urlpatterns = [
     url(r'^hello/', views.hello, name='hello'),
     url(r'^$', views.hello, name='hello'),
-    url(r'^saySomthing/', view=.saySomthing, name='saySomthing')
+    url(r'^saySomthing/', views.saySomthing, name='saySomthing')
 ]
