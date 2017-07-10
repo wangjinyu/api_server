@@ -10,3 +10,6 @@ def saySomthing(request):
 
 def current_time(request):
     return HttpResponse("将要显示当前时间")
+
+def home(request):
+    return HttpResponse("home")
