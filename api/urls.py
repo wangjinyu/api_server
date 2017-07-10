@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^hello/', views.hello, name='hello'),
     url(r'^$', views.hello, name='hello'),
     url(r'^saySomthing/', views.saySomthing, name='saySomthing')
+    url(r'^current_time/', views.current_time, name='current_time')
 ]

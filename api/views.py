@@ -6,3 +6,7 @@ def hello(request):
 
 def saySomthing(request):
     return HttpResponse("restart test.")
+
+
+def current_time(request):
+    return HttpResponse("将要显示当前时间")
