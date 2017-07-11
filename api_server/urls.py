@@ -20,7 +20,6 @@ from xadmin.plugins import xversion
 xversion.register_models()
 
 urlpatterns = [
-    url(r'^xadmin/', include(xadmin.site.urls), name = 'xadmin'),
-    url(r'^', include(xadmin.site.urls), name = 'xadmin'),
+    url(r'^admin/', include(xadmin.site.urls), name = 'xadmin'),
     url(r'^api/', include('api.urls')),
 ]
