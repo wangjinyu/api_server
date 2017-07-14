@@ -9,7 +9,9 @@ class GlobalSetting(object):
 xadmin.site.register(views.CommAdminView, GlobalSetting)
 
 class UserInfoAdmin(object):
-    list_display = ('username', 'email', 'last_login', 'date_joined', 'age')
+    list_display = ( 'username', 'email', 'last_login', 'date_joined', 'age')
     empty_value_display = '-empty-'
+    ordering = ['-date_joined']
+
 xadmin.site.unregister(UserInfo)
 xadmin.site.register(UserInfo, UserInfoAdmin)
